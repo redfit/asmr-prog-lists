@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+    />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Simple Sidebar #1 | AsmrProg</title>
+  </head>
+  <body>
+    <nav class="sidebar">
+      <div class="sidebar-inner">
+        <header class="sidebar-header">
+          <button class="sidebar-burger" onclick="toggleSidebar()">
+            <i class="bx bx-menu"></i>
+          </button>
+          <img src="logo.png" alt="logo" class="sidebar-logo" />
+        </header>
+        <nav class="sidebar-menu">
+          <button>
+            <i class="bx bx-home"></i>
+            <span>HOME</span>
+          </button>
+          <button>
+            <i class="bx bx-user"></i>
+            <span>Accounts</span>
+          </button>
+          <button class="has-border">
+            <i class="bx bx-cog"></i>
+            <span>Settings</span>
+          </button>
+          <button>
+            <i class="bx bx-shape-circle"></i>
+            <span>Blockchain</span>
+          </button>
+          <button>
+            <i class="bx bx-data"></i>
+            <span>Databases</span>
+          </button>
+          <button>
+            <i class="bx bx-speaker"></i>
+            <span>AudioVibe</span>
+          </button>
+          <button class="has-border">
+            <i class="bx bx-music"></i>
+            <span>Soundblast</span>
+          </button>
+          <button>
+            <i class="bx bx-folder"></i>
+            <span>Folders</span>
+          </button>
+          <button>
+            <i class="bx bx-layer"></i>
+            <span>Levels</span>
+          </button>
+          <button>
+            <i class="bx bx-lock"></i>
+            <span>Security</span>
+          </button>
+        </nav>
+      </div>
+      <script type="text/javascript">
+        const toggleSidebar = () => document.body.classList.toggle("open");
+      </script>
+    </nav>
+  </body>
+</html>
